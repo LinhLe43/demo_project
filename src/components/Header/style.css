@@ -1,0 +1,101 @@
+.Page-header {
+  background-color: #f8f8f8;
+  box-shadow: #000000 0px 4px 6px 0px;
+  color: #2b2c3b;
+  line-height: 26px;
+  width: 80%;
+}
+
+.Page-header-bar {
+  background-color: #f8f8f8;
+  align-items: center;
+  display: flex;
+  /* height: 72px; */
+  justify-content: space-between;
+  /* position: relative; */
+  line-height: 26px;
+}
+
+.Page-header-bar-logo {
+  z-index: 1;
+  position: relative;
+  margin-right: 20px;
+}
+
+.PageLogo-image {
+  color: #f54811;
+  line-height: 26px;
+}
+
+.Page-header-navigation {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navigation-items-right {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navigation-items-right li {
+    color: #606060;
+    padding: 0 16px;
+    font-weight: 500;
+}
+
+.Navigation-items-left {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+}
+
+.Navigation-items-left li {
+    padding: 0 16px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .Navigation-item {
+  align-items: center;
+  color: #2b2c3b;
+  display: flex;
+  line-height: 26px;
+}
+
+.NavigationItem {
+  border-radius: 0px 0px 2px 2px;
+  color: #2b2c3b;
+  display: flex;
+  line-height: 26px;
+  padding: 0px 16px;
+  text-align: left;
+}
+
+.NavigationItem-text {
+  align-items: center;
+  color: #2b2c3b;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: space-between;
+  line-height: 28px;
+  text-align: left;
+}
+
+.NavigationItem-text-link {
+  color: #2b2c3b;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+} */

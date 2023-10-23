@@ -1,0 +1,81 @@
+.ProLeadC {
+    background-image: url("https://resources.gonitro.com/dims4/default/31655c0/2147483647/strip/true/crop/1920x450+0+0/resize/1920x450!/quality/90/?url=http%3A%2F%2Fnitro-brightspot.s3.us-west-2.amazonaws.com%2F78%2F05%2Fa19d37e54a78ab98ba75a1514038%2Fnitro-windows-allgraphic-bg.png");
+    background-position: 50% 50%, 50% 50%;
+    background-size: cover, cover;
+}
+
+.Nitro .PromoLeadC-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.PromoLeadC-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.PromoLeadC-title {
+    font-size: 36px;
+    line-height: 1;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.PromoLeadC-description {
+    color: #575962;
+    margin: 0px 0px 24px;
+    font-size: 18px;
+    line-height: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PromoLeadC-cta {
+    justify-content: center flex-start;
+}
+
+.button-primary {
+    color: #ffffff;
+    background: #d93706;
+    border-color: #d93706;
+    padding: 11px 31px;
+    border-radius: 5px;
+}
+
+.button-tertiary {
+    color: #2a2d42;
+    background: transparent;
+    border-color: #090b21;
+    fill: #2a2d42;
+    padding: 11px 31px;
+    border-radius: 5px;
+    border: #090b21 solid;
+}
+
+.PromoLeadC-media {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.Image {
+    color: #2b2c3b;
+    line-height: 26px;
+    text-align: center;
+}
+
