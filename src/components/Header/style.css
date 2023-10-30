@@ -1,0 +1,165 @@
+.Page-header {
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.Page-header-bar {
+  background-color: #f8f8f8;
+  height: 72px;
+  max-width: 1240px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 26;
+  position: relative;
+}
+
+.Page-header-bar-logo {
+  margin-right: 14px;
+  z-index: 1;
+  position: relative;
+}
+
+.Page-header-navigation {
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.Navigation {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.Navigation-items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.Navigation-items-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* .Navigation-items-item:nth-child(5) {
+  margin-left: auto;
+} */
+
+.Navigation-items-item[data-nav-buton="true"] {
+  margin-left: auto;
+}
+
+.Navigation-items-item:nth-last-child(1) {
+  margin-left: 0;
+}
+
+.NavigationItem {
+  border-radius: 0px 0px 2px 2px;
+  color: #2b2c3b;
+  display: flex;
+  line-height: 26px;
+  padding: 0px 16px;
+  text-align: left;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.NavigationItem-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+}
+
+.NavigationItem-text-link {
+  display: flex;
+  height: auto;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+  color: #828990;
+}
+
+.NavigationItem-text-link-label {
+  color: #606060;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.NavigationItem-button.orange-link {
+  color: #090b21;
+  font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 30px;
+  text-align: left;
+}
+
+.NavigationItem-button-label-try {
+  color: #f54811;
+  display: inline;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.NavigationItem-button-label {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+}
+
+.NavigationItem-button.primary {
+  align-items: center;
+  background-color: #c12800;
+  border-radius: 6px;
+  color: #ffffff;
+  display: flex;
+  font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 16px;
+  margin: 0px 0px 0px 24px;
+  padding: 12px 15px;
+  text-align: center;
+}

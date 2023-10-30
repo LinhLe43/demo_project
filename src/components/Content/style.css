@@ -1,0 +1,94 @@
+.PromoLeadC {
+  background-image: linear-gradient(#ffffff, transparent 80%), url('https://resources.gonitro.com/dims4/default/31655c0/2147483647/strip/true/crop/1920x450+0+0/resize/1920x450!/quality/90/?url=http%3A%2F%2Fnitro-brightspot.s3.us-west-2.amazonaws.com%2F78%2F05%2Fa19d37e54a78ab98ba75a1514038%2Fnitro-windows-allgraphic-bg.png');
+  color: #2b2c3b;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-color: 0;
+  position: relative;
+  display: flex;
+}
+
+.PromoLeadC-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.PromoLeadC-content {
+  max-width: 800px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.PromoLeadC-title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+
+.PromoLeadC-description {
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+  color: #575962;
+  font-size: 1.125rem;
+}
+
+.PromoLeadC-cta {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-primary {
+ padding: 11px 31px;
+ font-size: 1rem;
+ line-height: 1.75rem;
+ font-weight: 600px;
+ font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+ color: #ffffff;
+ background-color: #d93706;
+ border-color: #d93706;
+ border-radius: 6px;
+ border-style: solid;
+ border-width: 1px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.button-tertiary {
+  padding: 11px 31px;
+ font-size: 1rem;
+ line-height: 1.75rem;
+ font-weight: 600px;
+ font-family: IBM Plex Sans, Arial, Helvetica, sans-serif;
+ color: black;
+ background-color: white;
+ border-color: black;
+ border-radius: 6px;
+ border-style: solid;
+ border-width: 1px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ fill: black
+}
+
+.PromoLeadC-media {
+  margin: 3rem 0 0;
+}
+
+h1 {
+  margin: 0;
+}
