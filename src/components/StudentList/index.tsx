@@ -3,11 +3,11 @@ import React from "react";
 import { TableHeaderProps } from "../Table/types";
 import { StudentItem } from "../../types/StudentItem";
 import { useSelector } from "react-redux";
-import { studentSelector } from "./slice/selector";
+import { studentListSelector } from "./slice/selector";
 import Table from "../Table";
 
 function StudentList() {
-  const students = useSelector(studentSelector);
+  const students = useSelector(studentListSelector);
   const headers: TableHeaderProps[] = [
     {
       id: "code",
@@ -34,12 +34,12 @@ function StudentList() {
         p: "20px",
       }}
     >
-      <Table 
-      headers={headers}
-      renderItem={renderItem}
-      items={students?.studentItem}
+      <Table
+        headers={headers}
+        renderItem={renderItem}
+        items={students}
+        totalElements={students?.length}
       />
-      
     </Card>
   );
 }
