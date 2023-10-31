@@ -1,6 +1,6 @@
 const path = {
-  root: '/',
-  login: '/login',
+  root: "/",
+  students: "/students",
 };
 
 export default path;

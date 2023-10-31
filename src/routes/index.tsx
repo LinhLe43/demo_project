@@ -1,9 +1,9 @@
-import { useRoutes } from 'react-router-dom';
+import { useRoutes } from "react-router-dom";
 
-import path from './path';
-import Header from '../components/Header';
-import Content from '../components/Content';
-import { StudentList } from '../components/StudentList';
+import path from "./path";
+import Header from "../components/Header";
+import Content from "../components/Content";
+import { StudentList } from "../components/StudentList";
 
 export default function Router() {
   // const location = useLocation();
@@ -19,6 +19,13 @@ export default function Router() {
         <>
           <Header />
           <Content />
+        </>
+      ),
+    },
+    {
+      path: path.students,
+      element: (
+        <>
           <StudentList />
         </>
       ),
