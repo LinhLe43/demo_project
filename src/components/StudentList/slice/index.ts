@@ -1,15 +1,15 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { StudentState } from "./type";
+import { ApiFormatData, StudentState } from "./type";
 import { StudentItem } from "../../../types/StudentItem";
 import { useInjectReducer, useInjectSaga } from "redux-injectors";
 import { studentSaga } from "./saga";
 
 export const initialState: StudentState = {
-  studentItem: [],
+  studentItem: undefined,
 };
 
 const slice = createSlice({
-  name: "studentList",
+  name: "students",
   initialState,
   reducers: {
     getStudents: {
@@ -17,10 +17,14 @@ const slice = createSlice({
         return state;
       },
       prepare(params?: null, meta?: (error: any) => void) {
+        console.log('params: ', params);
+        
         return { payload: params, meta };
       },
     },
-    getStudentSuccess(state, action: PayloadAction<StudentItem[]>) {
+    getStudentSuccess(state, action: PayloadAction<ApiFormatData<StudentItem>>) {
+      console.log('action.payload: ', action.payload);
+      
       state.studentItem = action.payload;
     },
   },

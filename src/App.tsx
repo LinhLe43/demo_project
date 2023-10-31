@@ -1,16 +1,12 @@
 import React from "react";
-import Header from "./components/Header";
-import Content from "./components/Content";
-import StudentList from "./components/StudentList";
 
-function App() {
+import Routes from './routes';
+import { BrowserRouter } from "react-router-dom";
+
+export function App() {
   return (
-    <>
-      <Header />
-      <Content />
-      <StudentList />
-    </>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
-
-export default App;

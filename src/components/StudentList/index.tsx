@@ -1,12 +1,17 @@
 import { Card, Typography } from "@mui/material";
-import React from "react";
+import { useEffect } from "react";
 import { TableHeaderProps } from "../Table/types";
 import { StudentItem } from "../../types/StudentItem";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { studentListSelector } from "./slice/selector";
 import Table from "../Table";
+import { UseStudentSlice } from "./slice";
 
-function StudentList() {
+interface Props {}
+
+export const StudentList = (props: Props) => {
+  const { actions: studentActions } = UseStudentSlice();
+  const dispatch = useDispatch();
   const students = useSelector(studentListSelector);
   const headers: TableHeaderProps[] = [
     {
@@ -20,6 +25,10 @@ function StudentList() {
       hasSort: false,
     },
   ];
+
+  useEffect(() => {
+    dispatch(studentActions.getStudents());
+  }, []);
 
   const renderItem = (item: StudentItem) => {
     return [
@@ -37,11 +46,9 @@ function StudentList() {
       <Table
         headers={headers}
         renderItem={renderItem}
-        items={students}
-        totalElements={students?.length}
+        items={students?.content}
+        totalElements={students?.totalElements}
       />
     </Card>
   );
-}
-
-export default StudentList;
+};
